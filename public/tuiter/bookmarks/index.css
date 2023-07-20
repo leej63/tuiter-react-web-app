@@ -1,0 +1,104 @@
+body {
+    font-family: Calibri, sans-serif;
+}
+
+.wd-no-underline {
+    text-decoration: none;
+}
+
+.wd-tuit-icons {
+    text-decoration: none;
+}
+
+.wd-border {
+    border-color: gray;
+    border-width: 0.25px;
+    padding-top: 12px;
+    width: 600px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+
+.wd-bookmarks-heading {
+    margin-left: 74px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.wd-post-icon {
+    font-size: 10px;
+    float: right;
+    color: gray;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.wd-bookmarks-post-avatar {
+    margin-left: 14px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    float: left;
+}
+
+.wd-bookmarks-post-avatar img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-bookmarks-post-container {
+    padding-bottom: 14px;
+    padding-top: 14px;
+    margin-left: 10px;
+    float: left;
+}
+
+.wd-bookmarks-post-user {
+    font-size: 15px;
+}
+
+.wd-bookmarks-post-content {
+    font-size: 15px;
+    max-width: 450px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+
+.wd-bookmarks-post img {
+    border-color: lightgray;
+    border-bottom-style: solid;
+    width: 504px;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    border-width: .5px;
+}
+
+.wd-post-icons {
+    justify-content: space-evenly;
+    display: flex;
+    width: 480px;
+    padding-top: 12px;
+}
+
+.wd-bookmarks-post-icon .wd-selected-icon {
+    color: red;
+}
+
+.wd-bookmarks-post {
+    width: 500px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: none;
+    border-width: .5px;
+    border-color: lightgray;
+    border-style: solid;
+    border-top: none;
+}
+
+.wd-clear-both {
+    clear: both;
+}
