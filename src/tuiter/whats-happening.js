@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import { AiOutlinePicture, AiOutlineFileGif } from 'react-icons/ai';
 import { HiOutlineLocationMarker, HiOutlineChartBar } from 'react-icons/hi';
 import { BsEmojiSmile } from 'react-icons/bs';
-import {createTuit} from "./reducers/tuits-reducer";
+// import {createTuit} from "./reducers/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -12,7 +13,7 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening
     }
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
  }
  return (

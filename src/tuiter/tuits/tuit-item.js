@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+// import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import {TbLetterX} from "react-icons/tb";
 import TuitStats from "./tuit-stats";
 import {MdVerified} from "react-icons/md";
@@ -26,7 +27,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
