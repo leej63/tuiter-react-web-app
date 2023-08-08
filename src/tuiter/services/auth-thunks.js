@@ -10,12 +10,14 @@ export const loginThunk = createAsyncThunk(
 );
 
 export const profileThunk = createAsyncThunk(
+    // user/profile ???
     "auth/profile", async () => {
     const response = authService.profile();
     return response.data;
 });
 
 export const logoutThunk = createAsyncThunk(
+    // user/logout ???
     "auth/logout", async () => {
     return await authService.logout();
 });
@@ -23,6 +25,12 @@ export const logoutThunk = createAsyncThunk(
 export const updateUserThunk = createAsyncThunk(
     "user/updateUser", async (user) => {
     await authService.updateUser(user);
+    return user;
+});
+
+export const registerThunk = createAsyncThunk(
+    "user/register", async (credentials) => {
+    const user = await authService.register(credentials);
     return user;
 });
    
