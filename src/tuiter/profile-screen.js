@@ -42,11 +42,13 @@ function ProfileScreen() {
      </div></div>
    )}
    <button
+    className="btn btn-primary mt-2"
     onClick={() => {
       dispatch(logoutThunk());
       navigate("/tuiter/login");
     }}>                   Logout</button>
-   <button onClick={save}>Save  </button>
+    <span>     </span>
+   <button className="btn btn-primary mt-2" onClick={save}>Save  </button>
   </div>
  );
 }
