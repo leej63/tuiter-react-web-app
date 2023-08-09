@@ -35,8 +35,7 @@ const NavigationSidebar = () => {
      )}
      {!currentUser && <Link className={`list-group-item text-capitalize ${active === "login" ? "active" : ""}`} to="/tuiter/login"><BiLogIn className="me-2"/>Login</Link>}
      {!currentUser && <Link className={`list-group-item text-capitalize ${active === "register" ? "active" : ""}`} to="/tuiter/register"><AiOutlineForm className="me-2"/>Register</Link>}
-     {!currentUser && <Link className="list-group-item text-capitalize" to="/tuiter/profile"><RxAvatar className="me-2" />Profile</Link>}
-     {/* change Profile !currentUser to currentUser when done */}
+     { currentUser && <Link className="list-group-item text-capitalize" to="/tuiter/profile"><RxAvatar className="me-2" />Profile</Link>}
    </div>
  );
 };
