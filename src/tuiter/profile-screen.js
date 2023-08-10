@@ -28,6 +28,11 @@ function ProfileScreen() {
       {profile ? (
         <div>
           <h1>Profile Screen</h1>
+          <div className="mt-2">
+            <span>Username: {currentUser.username}</span><br/>
+            <span>First Name: {currentUser.firstName}</span><br/>
+            <span>Last Name: {currentUser.lastName}</span><br/>
+          </div>
           <div>
             <div className="mt-2">
               <label className="form-label">First Name</label>
