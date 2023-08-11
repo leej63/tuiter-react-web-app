@@ -19,19 +19,17 @@ function ProfileScreen() {
        setProfile(payload);
      }
    };
-   if (!profile) {
      loadProfile();
-   }
  }, []);
  return (
   <div>
-      {profile ? (
+      {profile && (
         <div>
           <h1>Profile Screen</h1>
           <div className="mt-2">
-            <span>Username: {currentUser.username}</span><br/>
-            <span>First Name: {currentUser.firstName}</span><br/>
-            <span>Last Name: {currentUser.lastName}</span><br/>
+            <span>Username: {profile.username}</span><br/>
+            <span>First Name: {profile.firstName}</span><br/>
+            <span>Last Name: {profile.lastName}</span><br/>
           </div>
           <div>
             <div className="mt-2">
@@ -72,8 +70,6 @@ function ProfileScreen() {
             </div>
           </div>
         </div>
-      ) : (
-        <h1>Authorization failed</h1>
       )}
     </div>
  );
